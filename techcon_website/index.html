@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TechCon 2024 Conference</title>
+</head>
+<body>
+
+  <header>
+    <h1>TechCon 2024</h1>
+    <nav aria-label="Primary Navigation">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="intro-heading">
+      <h2 id="intro-heading">Welcome to TechCon 2024</h2>
+      <p>
+        Join us at TechCon 2024, the premier technology conference featuring
+        inspiring speakers, hands-on workshops, and networking opportunities
+        with industry leaders from around the world.
+      </p>
+
+      <video controls width="600" aria-describedby="video-desc">
+        <source src="promo-techcon2024.mp4" type="video/mp4" />
+        <track kind="captions" src="promo-techcon2024-captions.vtt" srclang="en" label="English" default />
+        Your browser does not support the video tag.
+      </video>
+      <p id="video-desc" class="sr-only">
+        Promotional video highlighting TechCon 2024's keynote speakers,
+        workshops, and event highlights.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 TechCon. All rights reserved.</p>
+  </footer>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0 1rem;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    nav a:hover,
+    nav a:focus {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    video {
+      display: block;
+      margin: 1rem 0;
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #222;
+      color: #bbb;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+  </style>
+
+</body>
+</html>
 
