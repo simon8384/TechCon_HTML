@@ -1,15 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TechCon 2024 Conference</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e2a78;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      color: #1e2a78;
+      font-size: 2rem;
+      margin-top: 0;
+    }
+
+    video {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #1e2a78;
+      color: white;
+      text-align: center;
+      padding: 15px 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+  </style>
 </head>
 <body>
 
   <header>
     <h1>TechCon 2024</h1>
-    <nav aria-label="Primary Navigation">
+    <nav>
       <ul>
         <li><a href="about.html">About</a></li>
         <li><a href="schedule.html">Schedule</a></li>
@@ -20,95 +109,23 @@
   </header>
 
   <main>
-    <section aria-labelledby="intro-heading">
-      <h2 id="intro-heading">Welcome to TechCon 2024</h2>
+    <section>
+      <h2>Welcome to TechCon 2024</h2>
       <p>
-        Join us at TechCon 2024, the premier technology conference featuring
-        inspiring speakers, hands-on workshops, and networking opportunities
-        with industry leaders from around the world.
+        TechCon 2024 is the leading technology conference bringing together professionals, innovators, and thought leaders from around the globe to share the latest in tech advancements. Get ready for insightful talks, networking opportunities, and the future of innovation.
       </p>
 
-      <video controls width="600" aria-describedby="video-desc">
+      <video controls>
         <source src="promo-techcon2024.mp4" type="video/mp4" />
         <track kind="captions" src="promo-techcon2024-captions.vtt" srclang="en" label="English" default />
         Your browser does not support the video tag.
       </video>
-      <p id="video-desc" class="sr-only">
-        Promotional video highlighting TechCon 2024's keynote speakers,
-        workshops, and event highlights.
-      </p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2024 TechCon. All rights reserved.</p>
+    <p>&copy; 2024 TechCon. All rights reserved. Copyright.</p>
   </footer>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0 1rem;
-      background-color: #f5f7fa;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #004080;
-      color: white;
-      padding: 1rem 0;
-      text-align: center;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0.5rem 0 0;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
-    nav a:hover,
-    nav a:focus {
-      text-decoration: underline;
-    }
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    video {
-      display: block;
-      margin: 1rem 0;
-      max-width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    }
-    footer {
-      background-color: #222;
-      color: #bbb;
-      text-align: center;
-      padding: 1rem 0;
-      font-size: 0.9rem;
-      margin-top: 3rem;
-    }
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0,0,0,0);
-      border: 0;
-    }
-  </style>
 
 </body>
 </html>
-
